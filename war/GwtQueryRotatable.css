@@ -1,0 +1,53 @@
+.draggable-zone {
+	background: #000 url(../images/space.jpg) 0 0 no-repeat;
+	background-size: cover;
+	overflow:   hidden;
+	position: absolute;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+}
+
+
+.ui-wrapper { overflow:   visible !important; }
+	
+.draggable-wrapper{
+	position: absolute;
+	height: auto;
+	width: auto;
+}
+
+.ui-resizable-handle {
+	background:    #f5dc58;
+	border:        1px solid #FFF;
+	z-index:    2;
+}
+	
+.rotatable-handle {
+	background:    #f5dc58;
+	border:        1px solid #FFF;
+	border-radius: 5px;
+  -moz-border-radius:    5px;
+  -o-border-radius:      5px;
+  -webkit-border-radius: 5px;
+	cursor:        pointer;
+	height:        10px;
+	width:         10px;
+	left:          50%;
+	margin:        0 0 0 -5px;
+	position:      absolute;
+	top:           -5px;
+}
+
+.ui-resizable-handle { 
+  width: 10px;
+  height: 10px;
+}
+
+#rotateMe{
+	position:relative;
+}
+	
+.rotatable-autohide .rotatable-handle { display: none; }
+.rotatable-handle.ui-draggable-dragging { display: none; }
